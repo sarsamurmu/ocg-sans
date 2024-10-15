@@ -1,0 +1,88 @@
+1C50 Zero
+1C51 One
+1C52 Two
+1C53 Three
+1C54 Four
+1C55 Five
+1C56 Six
+1C57 Seven
+1C58 Eight
+1C59 Nine
+
+
+1C5A La
+1C5B At
+1C5C Ag
+1C5D Ang
+1C5E Al
+1C5F Laa
+1C60 Aak
+1C61 Aaj
+1C62 Aam
+1C63 Aaw
+1C64 Li
+1C65 Is
+1C66 Ih
+1C67 Iny
+1C68 Ir
+1C69 Lu
+1C6A Uc
+1C6B Ud
+1C6C Unn
+1C6D Uy
+1C6E Le
+1C6F Ep
+1C70 Edd
+1C71 En
+1C72 Err
+1C73 Lo
+1C74 Ott
+1C75 Ob
+1C76 Ov
+1C77 Oh
+
+
+1C78 Mu Ttuddaag
+1C79 Gaahlaa Ttuddaag
+1C7A Mu-Gaahlaa Ttuddaag
+1C7B Relaa
+1C7C Phaarkaa
+1C7D Ahad
+1C7E Mucaad
+1C7F Double Mucaad
+
+
+002C Comma
+002E Full Stop
+003F Question Mark
+0021 Exclamation Mark
+002F Solidus
+003A Colon
+003B Semicolon
+003C Less-Than
+003D Equals
+003E Greater-Than
+0022 Quotation Mark
+0023 Number Sign
+0025 Percent
+0027 Apostrophe
+0028 Left Parenthesis
+0029 Right Parenthesis
+002A Asterisk
+002B Plus
+002D Hyphen
+005B Left Square Bracket
+005D Right Square Bracket
+005C Reverse Solidus
+007B Left Curly Bracket
+007D Right Curly Bracket
+005E Circumflex Accent
+2013 En Dash
+2014 Em Dash
+2018 Left Single Quotation Mark
+2019 Right Single Quotation Mark
+201C Left Double Quotation Mark
+201D Right Double Quotation Mark
+005F Low Line
+007C Vertical Line
+0040 Commercial At

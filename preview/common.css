@@ -1,0 +1,11 @@
+@import url('../generated/fonts.css');
+@import url('../generated/fonts_rounded.css');
+
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'OCGS';
+  src: url('../fonts/OCG Sans Regular.otf');
+}

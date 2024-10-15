@@ -1,0 +1,60 @@
+textarea {
+  padding: 10 30px;
+  font-size: 4rem;
+  /* font-size: 20rem; */
+  width: 98vw;
+  border: none;
+  /* font-family: 'OCGS', 'Noto Sans Ol Chiki'; */
+  /* font-family: 'Noto Sans Ol Chiki'; */
+  font-family: 'OCGS', 'Inter';
+  line-height: 1;
+  resize: vertical;
+  font-weight: 400;
+  /* font-weight: 600; */
+  display: none;
+}
+
+body > p {
+  font-family: 'Noto Sans Ol Chiki';
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.paragraphs {
+  font-family: 'OCGS', 'Noto Sans Ol Chiki';
+  font-family: 'Noto Sans Ol Chiki';
+  font-family: 'OCGS';
+  line-height: 1.4;
+  font-size: 1rem;
+  /* font-weight: bold; */
+}
+
+.paragraphs span {
+  display: block;
+}
+
+select {
+  margin-bottom: 20px;
+  padding: 4px 10px;
+}
+
+.comparator {
+  font-family: 'OCGS';
+  font-size: 5rem;
+  position: relative;
+}
+
+.comparator > p {
+  width: 95vw;
+  position: absolute;
+  margin: 0;
+  text-wrap: wrap;
+  overflow-wrap: break-word;
+  opacity: 0.5;
+}
+
+.comparator > p:last-child {
+  /* color: blue; */
+  /* display: none; */
+}

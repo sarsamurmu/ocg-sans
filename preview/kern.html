@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kern Preview</title>
+    <link rel="stylesheet" href="common.css">
+
+    <style>
+      .kerns {
+        font-family: 'OCGS';
+        font-size: 1rem;
+      }
+
+      span {
+        display: block;
+        margin-left: 100px;
+      }
+
+      span::after {
+        content: attr(data-index);
+        font-family: 'JetBrains Mono';
+        margin-left: 600px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="kerns"></div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const kernDiv = document.querySelector('.kerns')
+        const kernChars = 'ᱚᱛᱜᱝᱞᱟᱠᱡᱢᱣᱤᱥᱦᱧᱨᱩᱪᱫᱬᱭᱮᱯᱰᱱᱲᱳᱴᱵᱶᱷ ᱽ ᱹᱺ'.replace(/ /g, '').split('')
+        let i = 0
+        kernChars.forEach(a => {
+          (['ᱨ'] || kernChars).forEach(b => {
+            i++
+            const span = document.createElement('span')
+            span.innerText = a + b
+            span.dataset.index = i
+            kernDiv.appendChild(span)
+          })
+        })
+
+        window.scrollTo(0, localStorage.getItem('scroll') ?? 0)
+
+        window.addEventListener('scroll', () => {
+          localStorage.setItem('scroll', window.scrollY)
+        })
+      })
+    </script>
+  </body>
+
+</html>
