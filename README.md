@@ -39,4 +39,4 @@ I personally think Affinity Designer has more features for designing than any ot
 designing programs (except, maybe Glyphs), since it is a generic designing program. Also, there's more flexibility in using scripts, I could automate almost all aspects of font post-processing.
 
 ## License
-This Font is licensed under the SIL Open Font License. See [LICENSE](./LICENSE.txt)
+This font is licensed under the SIL Open Font License. See [LICENSE](./LICENSE.txt)

@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+import shutil
 from defcon import Font
 import ufo2ft
 import extractor
@@ -18,11 +19,10 @@ weightMap = {
     800: 9
 }
 
+root = Path(os.path.dirname(os.path.realpath(__file__)))
 
-dirsToMake = ('./fonts/rounded/', './generated/')
-for dir in dirsToMake:
-    if not os.path.isdir(dir):
-        os.makedirs(dir)
+(root / 'fonts/rounded/').mkdir(exist_ok=True)
+(root / 'generated/').mkdir(exist_ok=True)
 
 for (name, _, italic, weight) in fi.variations:
     ufo = Font()
@@ -87,7 +87,11 @@ for (name, _, italic, weight) in fi.variations:
                      .replace(f"'{fontName}'", f"'{fontName} R'"))
     names.append(f'"{fontName}"')
 
-dir = Path(os.path.dirname(os.path.realpath(__file__)))
-(dir / './generated/fonts.css').write_text(''.join(cssFaces).strip())
-(dir / './generated/fonts_rounded.css').write_text(''.join(rCssFaces).strip())
-(dir / './generated/fonts.json').write_text(f'[{", ".join(names)}]')
+(root / 'generated/fonts.css').write_text(''.join(cssFaces).strip())
+(root / 'generated/fonts_rounded.css').write_text(''.join(rCssFaces).strip())
+(root / 'generated/fonts.json').write_text(f'[{", ".join(names)}]')
+
+shutil.copyfile(root / 'LICENSE.txt', root / 'fonts/rounded/LICENSE.txt')
+shutil.make_archive('archive', 'zip', root_dir=(root / 'fonts/rounded'))
+shutil.copyfile(root / 'archive.zip', root / f'generated/Ol-Chiki-Gaban-Sans-{versionMajor}.{versionMinor}.zip')
+(root / 'archive.zip').unlink()
